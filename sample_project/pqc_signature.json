@@ -1,0 +1,8 @@
+{
+  "pqcPubKey": "base64encodedkey==",
+  "hybridSignature": "base64signature==",
+  "pqcAlgorithm": "Dilithium2",
+  "hybridAlgorithm": "Dilithium+Ed25519",
+  "pqcPubKeyLength": 1936,
+  "hybridSignatureLength": 3400
+}

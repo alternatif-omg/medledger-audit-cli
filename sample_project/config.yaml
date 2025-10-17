@@ -1,0 +1,8 @@
+# Config file
+MANDAT_FINAL:
+  PQC_SIG_LEN: 3400
+  PQC_VERIF_KEY_LEN: 1936
+
+security:
+  hospital_mTLS: true
+  PQCProof: false

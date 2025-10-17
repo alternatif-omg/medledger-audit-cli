@@ -1,0 +1,59 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MedLedger Security Audit Report</title>
+        <style>
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f9fafb; margin: 0; padding: 20px; color: #111827; }
+            h1 { color: #111827; border-bottom: 2px solid #e5e7eb; padding-bottom: 10px; }
+            .section { background: white; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+            .title { font-size: 18px; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; }
+            .pass { color: #16a34a; }
+            .fail { color: #dc2626; }
+            .info { color: #2563eb; }
+            .warning { color: #ca8a04; }
+            .score { font-size: 20px; font-weight: bold; color: #fff; background: #16a34a; padding: 8px 16px; border-radius: 8px; display: inline-block; }
+            .zt-item { padding: 5px 0; }
+        </style>
+    </head>
+    <body>
+        <h1>🔍 MedLedger Security Audit Report</h1>
+        <p><b>Generated on:</b> 2025-10-17 16:35:28</p>
+        <p>📂 <b>Project:</b> medledger-audit-cli</p>
+
+        <div class="section">
+            <div class="title">🧱 Core Audit</div>
+            
+                
+                    <p class="pass">✅ <b>Hybrid PQC Proof</b>: Valid Dilithium + Ed25519 sizes</p>
+                
+            
+                
+                    <p class="pass">✅ <b>MANDAT FINAL Audit</b>: Found in 2 files</p>
+                
+            
+                
+                    <p class="pass">✅ <b>Constant-Time Simulation</b>: Timing stable (0.00003s)</p>
+                
+            
+                
+                    <p class="info">ℹ️ <b>Overall Security Score</b>: 100.0% Compliant</p>
+                
+            
+        </div>
+
+        <div class="section">
+            <div class="title">🛡️ Zero Trust Summary</div>
+            <div class="zt-item">✅ MANDAT FINAL Audit: PQC parameters valid</div>
+            <div class="zt-item">✅ Zero Trust Policy: hospital_mTLS active</div>
+            <div class="zt-item">⚠ PQCProof missing in transport layer</div>
+        </div>
+
+        <div class="section">
+            <div class="title">📊 Final Score</div>
+            <span class="score">100.0% Compliant</span>
+        </div>
+    </body>
+    </html>
+    

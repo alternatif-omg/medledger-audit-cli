@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "name": "Hybrid PQC Proof",
+      "status": "pass",
+      "detail": "Valid Dilithium + Ed25519 sizes"
+    },
+    {
+      "name": "MANDAT FINAL Audit",
+      "status": "pass",
+      "detail": "Found in 2 files"
+    },
+    {
+      "name": "Constant-Time Simulation",
+      "status": "pass",
+      "detail": "Timing stable (0.00003s)"
+    },
+    {
+      "name": "Overall Security Score",
+      "status": "info",
+      "detail": "100.0% Compliant"
+    }
+  ],
+  "ZeroTrust": {
+    "MANDAT_FINAL": "\u2705 MANDAT FINAL Audit: PQC parameters valid",
+    "mTLS": "\u2705 Zero Trust Policy: hospital_mTLS active",
+    "PQCProof": "\u26a0 PQCProof missing in transport layer"
+  }
+}

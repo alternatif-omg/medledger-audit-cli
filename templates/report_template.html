@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MedLedger Security Audit Report</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; background: #f8f9fa; }
+  h1 { color: #2c3e50; }
+  .card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+  .status { font-weight: bold; }
+  .score { color: white; padding: 8px 12px; border-radius: 8px; display: inline-block; }
+</style>
+</head>
+<body>
+  <h1>🔍 MedLedger Security Audit Report</h1>
+  <p><strong>Generated on:</strong> {{ timestamp }}</p>
+  <p><strong>📂 Project:</strong> {{ project_path }}</p>
+
+  <div class="card">
+    <h2>🧩 Core Audit</h2>
+    <p><strong>✅ Hybrid PQC Proof:</strong> {{ pqc_status }}</p>
+    <p><strong>✅ MANDAT FINAL Audit:</strong> {{ mandat_status }}</p>
+    <p><strong>✅ Constant-Time Simulation:</strong> {{ timing_status }}</p>
+  </div>
+
+  <div class="card">
+    <h2>🛡 Zero Trust Summary</h2>
+    <p>{{ mandat_final }}</p>
+    <p>{{ mtls_status }}</p>
+    <p>{{ pqcproof_status }}</p>
+  </div>
+
+  <div class="card">
+    <h2>📊 Final Score</h2>
+    <div class="score" style="background-color: {{ score_color }};">
+      {{ score }}% Compliant
+    </div>
+  </div>
+</body>
+</html>
